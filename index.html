@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/timer-or-chronometer-tool.png" type="image/x-icon">
+    <title>Cronômetro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-logo">
+            <img class="container-logo-img" src="./assets/img/LOGO-DEV-BRANCO.png" alt="" width="20%">
+            <h1 class="container-logo-h1">CRONÔMETRO</h1>
+        </div>
+
+        <div class="container-button">
+
+            <div id="contador">
+                <p class="reloj" id="Hours">00</p>
+                <p class="reloj" id="Minutos"> :00</p>
+                <p class="reloj" id="Seconds">:00</p>
+                <p class="reloj" id="Hundredths">:00</p>
+            </div>
+
+            <div>
+                <button id="start" onclick="start()" class="container-button-b1">INICIAR</button>
+                <button id="stop" onclick="stop()" class="container-button-b2" disabled>PARAR</button>
+                <button id="continues" onclick="reset()" class="container-button-b3" disabled>RESETAR</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/script.js"></script>
+</html>
